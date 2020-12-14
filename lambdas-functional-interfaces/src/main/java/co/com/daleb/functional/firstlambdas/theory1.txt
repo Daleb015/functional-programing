@@ -1,0 +1,19 @@
+- Before java 1.8 there is not a wy to reduce code in a very diferent task, there was a few fear things like anonymous classes but that changes with
+the funtional programing, especifically with lambdas
+
+- A function in java has 4 properties:
+    * Name of function
+    * Parameters list
+    * Body of the function
+    * Return type
+
+- We can replace instance of a interface when using anonymous class,
+thats because the compiler know wich type of object receive the thread
+class for their contract.
+
+- If a interface defines just one method, we cant ignore the method name
+of the implementation because the compiler only have one method to use.
+
+- we can avoid the return type for the same reason, the compiler knows
+which is the type of return.
+

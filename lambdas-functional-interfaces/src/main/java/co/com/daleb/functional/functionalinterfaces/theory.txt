@@ -1,0 +1,11 @@
+Functional Interfaces
+
+* Functional interfaces are behind every lambda
+* can only have one abstract method
+* Every interface with just one abstract method
+ is a functional interface
+* This has made in this way because this allows no ambiguity
+* We can use @Functional interface to restrict nobody add a
+second abstract method, but is not needed.
+* Cannot be lambdas without functional interface, whe can design our own interface,
+ but java api has implementations of these funtional interfaces
