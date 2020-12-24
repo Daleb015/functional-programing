@@ -9,3 +9,5 @@ Functional Interfaces
 second abstract method, but is not needed.
 * Cannot be lambdas without functional interface, whe can design our own interface,
  but java api has implementations of these funtional interfaces
+
+* Lambdas use type inference and dinamycinvoke ofered by the jvm

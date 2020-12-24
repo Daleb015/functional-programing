@@ -1,7 +1,10 @@
 package co.com.daleb.functional.functionalinterfaces;
 
+import java.util.Optional;
+
 public class FunctionaInterfaceDemo {
     public static void main(String[] args) {
+
         // here we are pass the lambda as the parameter
         MyFunctionalInterface fun = () -> System.out.println("hello");
         fun.myMethod();
