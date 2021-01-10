@@ -1,7 +1,4 @@
-package com.co.daleb.generics;
-
-import lombok.AllArgsConstructor;
-import lombok.ToString;
+package com.co.daleb.generics.basics;
 
 class BaseData<T>{};
 

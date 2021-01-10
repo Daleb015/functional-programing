@@ -1,0 +1,12 @@
+Los genericos en java permiten hacer chequeo de tipos en tiempo de compilación,
+también permiten extender y reutilizar código.
+
+Una interfaz puede ser genérica, se puede extender código,
+entre clases no genericas a genéricas,
+siempre y cuando se marquen los tipos.
+
+Elimina la necesida de castear, el compilador lo ejecuta con el sutipo
+
+Cuando no le asignamos un tipo generico a una clase o interfaz que debe llevar el tipo
+por defecto se agrega un Raw type, que es un tipo generico de clase genérica.
+

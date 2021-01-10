@@ -1,4 +1,4 @@
-package com.co.daleb.generics;
+package com.co.daleb.generics.basics;
 
 interface Iinterface{};
 
