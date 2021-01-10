@@ -10,3 +10,14 @@ Elimina la necesida de castear, el compilador lo ejecuta con el sutipo
 Cuando no le asignamos un tipo generico a una clase o interfaz que debe llevar el tipo
 por defecto se agrega un Raw type, que es un tipo generico de clase genérica.
 
+Podemos poner tantos parametros como necesitemos
+
+Subtyping: podemos agregar elementos de un parametro aunque no sean del mismo tipo,
+si los mismos con compatibles, por herencia o tipo,
+por ejemplo marcar un parametro como object y agregar un entero,
+se cumple porque el entero hereda del object
+
+Se puede usar genericos en los methodos sin estar
+definidos en una clase generica, en este caso cambia
+la sintaxis y declaracion del metodo
+
