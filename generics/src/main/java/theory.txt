@@ -21,3 +21,9 @@ Se puede usar genericos en los methodos sin estar
 definidos en una clase generica, en este caso cambia
 la sintaxis y declaracion del metodo
 
+
+Los tipos de parametros aunque son genericos pueden ser acotados,
+podemos especificar que tipo de parametro se recibe, con bounded type parameters.
+
+
+
