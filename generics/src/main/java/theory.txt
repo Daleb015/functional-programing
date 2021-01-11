@@ -25,5 +25,5 @@ la sintaxis y declaracion del metodo
 Los tipos de parametros aunque son genericos pueden ser acotados,
 podemos especificar que tipo de parametro se recibe, con bounded type parameters.
 
-
+Wilf Card: ? Comodines como parametros
 
