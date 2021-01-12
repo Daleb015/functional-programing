@@ -27,3 +27,18 @@ podemos especificar que tipo de parametro se recibe, con bounded type parameters
 
 Wilf Card: ? Comodines como parametros
 
+Las wild carts tambien se pueden restringir hacia arriba,
+(implementa) o hacia abajo (Hereda)
+upper bounded windcart: ? extends A
+lower bounded wild cart: ? super B
+
+Restricciones:
+Wildcarts no pueden usarse n la definicion de clases genericas,
+wildcarts no pueden usarse para restringir mas de una clase o interfaz, a diferencia de parametros de tipo.
+
+Alcance: una parametrizacion generica puede ser cambiada si es otro lugar del codigo se redefine,
+en este caso el compilador no podra detectar el error en tiempo de compilacion.
+
+Type erasure, el compilador colocara los tipos referenciados en tipo de ocmpilacion y
+ borrara según requiera la clase descrita, esto genera que una clase declarada generica puede
+ quedar como un tipo crudo en tiempo de ocmmpilacion.
