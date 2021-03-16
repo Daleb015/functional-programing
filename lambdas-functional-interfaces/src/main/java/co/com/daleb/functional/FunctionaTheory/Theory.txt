@@ -1,0 +1,85 @@
+Functional programming is a programing paradigm.
+
+Theory
+- First class citizens
+- Pure functions - no side efects
+- Higher order functions
+- Referential Transparency
+
+Uses
+- Functional Chaining
+- Functional Composition
+- Closures
+- Currying
+- Lazy evaluation
+- Taip Call Optimization
+
+Apis
+- Writing functional apis
+
+
+                                                    Theory
+
+Functional programming is declarative, so it uses declarative, it means what to solve rather than how to solve.
+Functional programming is older than computers, it uses lambda calculus.
+
+                                        Functions as first class citizens
+
+
+Now the language permit pass functions as arguments or as value:  Function aFun = myFunction(Function fun);
+This means we can asign functions as variables
+
+                                                Pure Functions
+
+Pure functions are a specific type of functions on functional programming, there are two characteristics that defines it:
+- The output of pure function depends only on (a) its input parameters and (b) its internal algorith.
+- If you call pure functions with the same parameters, you will get allways the same result.
+- A pure function has no Side effects : No side effects means that the functions doesn´t read anything outside worlds and doesn´t write anything outside world.
+Outside world refers to databases, files, web service, etc.
+- So side effects can be anything a method does besides computing and returning a value, anychange of instance or class field is a side
+ effect. (Writing to the screen, post to a service, writing a file etc.)
+- The pure functions do not modify the arguments which are passed to them.
+
+
+We can see pure effects in the jdk like Math.sen, List, Maps and other, in the same way we can find no pure interfaces as
+Consumer, because it takes anything like parameter a do something, in the javadoc says operate via side effects.
+
+- Pure functions allows clarity of thought
+- Easy to reason about
+- They never modify the shared state or variables
+
+
+                                            Higher Order Functions
+
+- Functions that take functions as arguments.
+- Functions that return functions as results.
+- These functions can take lambdas as parameters, so there are too many high order functions in the sdk.
+
+                                                No side Effects
+
+- So side effects can be anything a method does besides computing and returning a value, anychange of instance or class field is a side
+ effect. (Writing to the screen, post to a service, writing a file etc.)
+- The pure functions do not modify the arguments which are passed to them.
+
+                                            Referential Transparency
+
+Referential transparency is a property of a function, variable or expresion where by the expression can be replaced by its (evaluated) value
+without affecting the behaviour of the program
+- In other words transparence means doesn´t make a difference
+- this is a concept from maths:  x = 7 +(2*4) we can change the values like x = 7 * 8,
+in fact we are just change a expression for his value and it doesn´t change the final result
+
+
+--- Pure functions are allways referential transparency
+--- Is not necesary that referential transparency functions be allways pure.
+--- Functional style avoid such methods which are not referentially transparent
+
+
+- Referential transparency make programs easy.
+- Make programs independent.
+- this simplifies unit testing and refactoring.
+
+
+
+
+
