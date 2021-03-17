@@ -1,0 +1,30 @@
+There are a few techniques in functional programming:
+
+- Functional Chaining
+- Functiona composition
+- Closures
+- Currying
+- Lazy evaluation
+- Tail Call Optiomization
+
+
+                                                            Functional Chaining
+
+In this technique we chains functions, each method returns an object allowing the calls to be chaines together in a
+single statement avoiding store intermediate results.
+
+obj.function1().function2().function3()
+
+it will express like this
+
+obj.performThis().andThenThis().andThenThis()..
+
+To use this we are going to take help from the interface´s default methods.
+
+to chain functions we should use the default method and execute in like a method that return a function.
+
+Is important to know that function interface has the default method to do theses.
+
+
+
+                                                           Functional Composition
