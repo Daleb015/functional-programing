@@ -1,5 +1,7 @@
 package co.com.daleb.functional.functionaltechniques;
 
+import java.util.function.Function;
+
 public class Chaining {
     public static void main(String[] args) {
 
@@ -22,8 +24,12 @@ public class Chaining {
         Consumer<String> c4 = consumer.thenAccept(consumer2);
         c4.accept("Basic Strong");
 
-        // The function interface has his own deafult chaining method
+        // The function interface has his own default chaining method
 
+        Function<Integer,Integer> f1 = s -> s+2;
+        Function<Integer,Integer> f2 = s -> s*2;
+        Function<Integer,Integer> f3 = f1.andThen(f2);
+        System.out.println(f3.apply(10));
 
 
     }

@@ -28,3 +28,46 @@ Is important to know that function interface has the default method to do theses
 
 
                                                            Functional Composition
+
+This techniques is different to last, because this does not tries to executed functions on results of other functions.
+This techniques executed one functions and the in the result create another executed in two steps.
+
+a.compose(b);
+
+In this case firts will be executed function b and then on the result funcion a.
+
+
+                                                                    Closures
+
+A closure is a function that refers to free varibles in its local context.
+
+- if we want to change the value of a variable inside a lambda, this variable needs to be final or effectively final, final is a atributed declared with final,
+effectively final is a value thas has been initialized one time and then is not assigned again in any other part of our code.
+
+- wherever any lambda expression uses a free variable in the same scope of that variable, the value of that variable is saved and whenever
+we call the lambda it goes along with that. that is whats a closure is.
+
+                                                                        Currying
+
+Currying is a technique in we change a multiple parameters functions into multiple functions having single parameter each one.
+
+Currying allow us to reuse exist functions like function to use on multiparameters functions.
+
+                                                                     Lazy Evaluation
+
+Lazy evaluation is a strategy which delays the evaluation of an expression ultil the value is needed, we can take advantage of this behaviour to delay
+or to even avoid method invocation or evaluation of expression. Because some expressiones are never needed to be valuated depending on some condictions.
+
+- Lazy evaluation can avoid the creation of heavyweight objects not needed.
+
+
+                                                                   Tail Call Optimizations   TCO
+
+Also known as Tail Call Recursion, this is a technique to reuse the same function or method to invoke itself since a condition changes.
+
+- In regular recursion each previous call waits for the value to be returned by the next call, so it can perform further operation with the returned value.
+
+- In tail call optimization, the each operation does not need to wait for the value of the next call, this means in each operation is executed the first call,
+and then the second, but does not exist awaits.
+
+- generally use accumulators to achieve this.
