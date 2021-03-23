@@ -1,0 +1,13 @@
+Iterator Design Pattern
+
+- Is a behavioural design pattern, which focuses on how objects interacts with each other.
+- accessing elements without exposing internal structure.
+
+strategy Design Pattern
+
+- Is use when we have multiple solutions or algorithms to solve a specific task and client decides the specific implementation which is to be used at runtime.
+
+Decorator Design Pattern
+
+The decorator design patter is used to modify functionality of objects at runtime without affecting other instances of the same class.
+
