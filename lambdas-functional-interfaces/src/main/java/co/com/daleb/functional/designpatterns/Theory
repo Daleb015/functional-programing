@@ -5,9 +5,33 @@ Iterator Design Pattern
 
 strategy Design Pattern
 
-- Is use when we have multiple solutions or algorithms to solve a specific task and client decides the specific implementation which is to be used at runtime.
+- Is use when we have multiple solutions or algorithms to solve a specific task and client decides the specific
+implementation which is to be used at runtime.
 
 Decorator Design Pattern
 
-The decorator design patter is used to modify functionality of objects at runtime without affecting other instances of the same class.
+- The decorator design patter is used to modify functionality of objects at runtime without affecting other instances
+of the same class.
 
+Fluent Interfaces
+
+- Fluent interfaces is a way of implementation, by we get easy readable and flowing interface, that often mimics a
+domain specific language.
+Using this pattern result in code that can be read nearly as human language.
+
+Factory Design Pattern
+
+- Its a creation pattern, which try to create a object without exposing instantiation logic.
+- The factory design pattern is a way to instantiating a class inside a designated method that we call a factory method.
+
+Builder Design Pattern
+
+- Builder pattern is all about providing flexibility in Object creation, The intent of the builder design pattern is to
+isolate the construction of a complex object from its representation.
+
+Command Design Pattern
+
+- is a behavioral pattern which is about encapsulating a request as an object, in this pattern we write code that
+sequences and executes methods based on runtime decisions or we can say commands.
+- A way to encapsulate a request as an object, parameterize clients with clients with different requests and perform
+corresponding operations.
