@@ -1,0 +1,9 @@
+Stream pipelines
+
+- Streams are not data containers, they provided operations over elements but cannot be used to contain objects.
+- Stream are compose by a source, zero or more intermediate operations and a terminal operation.
+
+- Source: Which we generate the stream such as collection. (Array, generation function or io channel).
+- Intermediate operations: These are operations that are applied on a stream and they return another stream.
+- Terminal Operation: Produces a result or side effect from stream, (Side effect is anything other than returning
+the result, such as print statement)

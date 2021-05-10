@@ -1,4 +1,4 @@
-package org.example;
+package co.com.daleb.streams;
 
 /**
  * Hello world!

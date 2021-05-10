@@ -1,4 +1,4 @@
-package org.example;
+package co.com.daleb.streams;
 
 import static org.junit.Assert.assertTrue;
 
