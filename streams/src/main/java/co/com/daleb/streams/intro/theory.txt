@@ -7,3 +7,13 @@ Stream pipelines
 - Intermediate operations: These are operations that are applied on a stream and they return another stream.
 - Terminal Operation: Produces a result or side effect from stream, (Side effect is anything other than returning
 the result, such as print statement)
+
+- A chain of operations over a stream are called a stream pipeline, an is composed by three things:
+    Source
+    Zero or more intermediate operations
+    A terminal Operations
+
+- Streams are not data containers
+- Streams are inmutable
+- We can use streams only once
+
