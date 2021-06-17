@@ -14,7 +14,12 @@ the result, such as print statement)
     A terminal Operations
 
 - Streams are not data containers
-- Streams are inmutable
+- Streams are immutable
 - We can use streams only once
 
--
+- All intermediate operations in streams are lazy.
+- Lazy means that if we have only intermediate operations on a pipeline, they are going to execute only when we call the final operations, not earlier.
+- This means that terminal operations are eager, and it´s execute the entire pipeline when are called.
+
+
+
