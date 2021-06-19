@@ -13,13 +13,24 @@ the result, such as print statement)
     Zero or more intermediate operations
     A terminal Operations
 
+What streams are not
 - Streams are not data containers
 - Streams are immutable
 - We can use streams only once
 
+Streams are lazy
 - All intermediate operations in streams are lazy.
 - Lazy means that if we have only intermediate operations on a pipeline, they are going to execute only when we call the final operations, not earlier.
 - This means that terminal operations are eager, and it´s execute the entire pipeline when are called.
 
+Numeric Streams
+- Let us to improve some specific operations on a stream
+- operations like average are only admitted with numeric streams like IntStream or LongStream
+- We can convert a stream to a numeric stream with methods like mapToDouble
+    IntStream mapToInt()
+    DoubleStream mapToDouble()
+    LongStream mapToLong()
+
+- Are develop to avoid cost of unboxing
 
 
