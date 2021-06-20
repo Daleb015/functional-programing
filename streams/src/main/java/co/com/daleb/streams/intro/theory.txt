@@ -49,6 +49,14 @@ Parallel Streams
     - Do not change the state of an object during the pipeline
 
 
+Stateless and stateful operations
+-Stateless operations
+    Do not need any kind of outside information
+
+-Stateful Operations
+    Need outside information
+
+
 
 
 
