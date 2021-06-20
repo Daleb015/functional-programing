@@ -38,6 +38,17 @@ FlatMap Operation
 - For this we can use the Stream.of(streamA,streamB), but this is a Stream of streams
 - To avoid the problem we can flatten the streams, this means to get each element inside the streams and put inside a new stream
 
+Parallel Streams
+- Helps to execute code faster because improves the use of more cores.
+- Means speed
+- there are two was, sequential and parallelisms
+- To choose when use parallelism we need to know things like:
+    - Stateless
+    - Non interfering (Data source)
+    - Associative
+    - Do not change the state of an object during the pipeline
+
+
 
 
 
