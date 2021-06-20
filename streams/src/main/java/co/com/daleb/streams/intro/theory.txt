@@ -33,8 +33,6 @@ Numeric Streams
 
 - Are develop to avoid cost of unboxing
 
-- Methods on numerics streams.
-    Sum
 
 
 
