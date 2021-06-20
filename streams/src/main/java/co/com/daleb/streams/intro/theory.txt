@@ -31,7 +31,13 @@ Numeric Streams
     DoubleStream mapToDouble()
     LongStream mapToLong()
 
-- Are develop to avoid cost of unboxing
+- the numeric streams Are develop to avoid cost of unboxing
+
+FlatMap Operation
+- There are some cases when we have more than one stream, and we want to operate all the elements inside these streams like just one stream
+- For this we can use the Stream.of(streamA,streamB), but this is a Stream of streams
+- To avoid the problem we can flatten the streams, this means to get each element inside the streams and put inside a new stream
+
 
 
 
