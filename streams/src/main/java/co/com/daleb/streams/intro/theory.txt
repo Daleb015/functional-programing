@@ -56,6 +56,23 @@ Stateless and stateful operations
 -Stateful Operations
     Need outside information
 
+Spliterator
+- Is a resource to connect to a custom datasource as a Stream
+- Is an object to access the data
+- Spliterator interface in java has 4 abstract methods tryAdvance, trySplit, estimatedSize and characteristics
+    tryAdvance execute an action in a next object if it exist
+    trySplit let´s us to divide the spliterator, is useful for parallel streams
+    estimatedSize try to give the number parallel elements
+    Characteristics is a group of attributes that defines the spliterator, like
+        sized
+        sorted
+        order
+        subsized
+        immutable
+        distinct
+        nonnull
+        concurrent
+- we can make our own spliterator and define characteristics to improve performance
 
 
 
