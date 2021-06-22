@@ -1,0 +1,20 @@
+Collectors
+- Collectors let us to decrease time collecting something
+- There are collectors for list, set, or any type of collections
+- Collect is a terminal operation
+- Collectors provide ready made reduce algorithms
+- There are summarize and aggregate operations with collectors
+
+we can transform stream to collection with collector, some of that collections are:
+    list
+    set
+    queue
+    three set
+    Map
+
+An important characteristic is we can divide into two collectors a stream based on a condition true or false.
+Also we can divide a stream in others stream based on a specific condition
+we can chain collector as an argument of other grouping operation on collectors, this is also known as downstream
+
+Collectors has operations
+    Joining Lets us to join string or values to produce a string, not a List
