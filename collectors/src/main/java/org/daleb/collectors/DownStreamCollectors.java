@@ -1,7 +1,6 @@
 package org.daleb.collectors;
 
 import org.daleb.Employee;
-
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -63,12 +62,11 @@ public class DownStreamCollectors {
                     .collect(
                             Collectors.groupingBy
                                     (e -> e.getDesignation(),
-                                            Collectors.mapping(e -> e.getSalary(), Collectors.maxBy(Comparator.comparing(Function.identity())))
+                                            Collectors.mapping(Employee::getSalary, Collectors.maxBy(Comparator.comparing(Function.identity())))
                                     )
                     );
 
             System.out.println(maxSalarys);
-
 
         }catch (IOException e){
             System.out.println(e);

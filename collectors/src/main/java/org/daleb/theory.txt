@@ -18,4 +18,22 @@ we can chain collector as an argument of other grouping operation on collectors,
 We can chain downstream collectors to perform complex operations
 
 Collectors has operations
-    Joining Lets us to join string or values to produce a string, not a List
+    Joining
+    summing
+    mapping
+    grouping
+    partitioning
+    averaging
+    counting
+    maxby
+    minby
+    reducing
+
+How collectors work
+    Collector is an interface with 5 abstract methods : supplier - accumulator - combiner - finisher - characteristics
+    At lease characteristics all the other methods are high order functions, so they returns supplier, biconsumer, binaryoperator, function.
+    But we dont need to implement that interfaces, all of that are implement in the utility class Collectors
+
+Collectors has a static nested class CollectorsImpl
+CollectorsImpl has many static methods to use the Collectors interface, but we can implement by ourselves.
+Collectors has a lot of implementations that are useful
