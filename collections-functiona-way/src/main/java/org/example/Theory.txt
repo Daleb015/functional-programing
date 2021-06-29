@@ -1,0 +1,1 @@
+Since java 1.8 collections api has been changed a lot, collections now are more readable, comprehensive, faster with functional way.
