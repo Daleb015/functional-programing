@@ -16,3 +16,7 @@ V
 &src/test/java/org/example/AppTest.java,4\3\438c56474209176629917f1aaaac4e1cf31f765e
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+f
+6src/main/java/org/example/SetFunctionalOperations.java,0\6\064f025cd11b96766d0f4111a637f94ab52b44cd
+f
+6src/main/java/org/example/MapFunctionalOperations.java,1\b\1bd76ae5d4b4114c8c3f4319100283bbacf1888a
