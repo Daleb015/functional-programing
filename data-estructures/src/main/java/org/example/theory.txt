@@ -1,0 +1,1 @@
+Data structures has to be immutable
