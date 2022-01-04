@@ -12,7 +12,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="generics" target="1.7" />
+      <module name="generics" target="9" />
       <module name="lambdas-functional-interfaces" target="11" />
     </bytecodeTargetLevel>
   </component>

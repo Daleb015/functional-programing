@@ -10,8 +10,6 @@ $src/main/java/org/example/Movie.java,1\d\1d072492392425e32cba576919b21272112d0
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
-R
-"src/main/java/org/example/App.java,2\6\268b09d2a5cdab7d148f0ec91f7b3fb51601410d
 V
 &src/test/java/org/example/AppTest.java,4\3\438c56474209176629917f1aaaac4e1cf31f765e
 7
@@ -20,3 +18,5 @@ f
 6src/main/java/org/example/SetFunctionalOperations.java,0\6\064f025cd11b96766d0f4111a637f94ab52b44cd
 f
 6src/main/java/org/example/MapFunctionalOperations.java,1\b\1bd76ae5d4b4114c8c3f4319100283bbacf1888a
+R
+"src/main/java/org/example/App.java,2\6\268b09d2a5cdab7d148f0ec91f7b3fb51601410d
