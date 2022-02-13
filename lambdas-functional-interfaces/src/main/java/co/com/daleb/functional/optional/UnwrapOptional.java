@@ -3,53 +3,49 @@ package co.com.daleb.functional.optional;
 import java.util.Optional;
 
 public class UnwrapOptional {
-    public static void main(String[] args) {
-        Integer a =10;
-        Optional<Integer> optional = Optional.of(a);
-        Integer integerVal = optional.get();
-        System.out.println(
-                integerVal
-        );
 
-        Optional<Integer> emptyOptional = Optional.empty();
+  public static void main(String[] args) {
+    Integer a = 10;
+    Optional<Integer> optional = Optional.of(a);
+    Integer integerVal = optional.get();
+    System.out.println(integerVal);
 
-        // emptyOptional.get();
+    Optional<Integer> emptyOptional = Optional.empty();
 
-        //Is present, see is the optional has the value present
+    // emptyOptional.get();
 
-        Integer val = optional.isPresent()?optional.get():0;
+    //Is present, see is the optional has the value present
 
-        System.out.println(val);
+    Integer val = optional.isPresent() ? optional.get() : 0;
 
-        Integer val2 = emptyOptional.isPresent()?emptyOptional.get():0;
+    System.out.println(val);
 
-        System.out.println(val2);
+    Integer val2 = emptyOptional.isPresent() ? emptyOptional.get() : 0;
 
-        // using optional at the previous way has no sense, it will be more boilerplate
+    System.out.println(val2);
 
-        // orElse, orElseGet
+    // using optional at the previous way has no sense, it will be more boilerplate
 
-        // orElse
+    // orElse, orElseGet
 
-        // in this case the computation of orelse is realized no matters that the optional has value.
-        Integer integer = emptyOptional.orElse(0);
-        System.out.println(integer);
+    // orElse
 
-        // orElseGet
-        // in tis case the supplier is only executed when the optional is empty
-        Integer integer1 = emptyOptional.orElseGet(() -> 0);
-        System.out.println(integer1);
+    // in this case the computation of orelse is realized no matters that the optional has value.
+    Integer integer = emptyOptional.orElse(0);
+    System.out.println(integer);
 
-        // orElseThrow,  lets you to throw a particular exception
+    // orElseGet
+    // in tis case the supplier is only executed when the optional is empty
+    Integer integer1 = emptyOptional.orElseGet(() -> 0);
+    System.out.println(integer1);
 
-        Integer integer2 = emptyOptional.orElseThrow(() -> new IllegalArgumentException());
-        System.out.println(integer2);
+    // orElseThrow,  lets you to throw a particular exception
 
-        // orElseThrow(), as the previous but whithin arguments, since java 10
+    Integer integer2 = emptyOptional.orElseThrow(() -> new IllegalArgumentException());
+    System.out.println(integer2);
 
-        Integer integer3 = emptyOptional.orElseThrow();
+    // orElseThrow(), as the previous but whithin arguments, since java 10
 
-
-
-    }
+    Integer integer3 = emptyOptional.orElseThrow();
+  }
 }

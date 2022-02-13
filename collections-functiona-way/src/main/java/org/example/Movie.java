@@ -2,48 +2,53 @@ package org.example;
 
 public class Movie {
 
-    private String name;
-    private int releaseYear;
-    private String industry;
+  private String name;
+  private int releaseYear;
+  private String industry;
 
-    public Movie(String name, int releaseYear, String industry) {
+  public Movie(String name, int releaseYear, String industry) {
+    this.name = name;
+    this.releaseYear = releaseYear;
+    this.industry = industry;
+  }
 
-        this.name = name;
-        this.releaseYear = releaseYear;
-        this.industry = industry;
+  public String getName() {
+    return name;
+  }
 
-    }
+  public void setName(String name) {
+    this.name = name;
+  }
 
-    public String getName() {
-        return name;
-    }
+  public int getReleaseYear() {
+    return releaseYear;
+  }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+  public void setReleaseYear(int releaseYear) {
+    this.releaseYear = releaseYear;
+  }
 
-    public int getReleaseYear() {
-        return releaseYear;
-    }
+  public String getIndustry() {
+    return industry;
+  }
 
-    public void setReleaseYear(int releaseYear) {
-        this.releaseYear = releaseYear;
-    }
+  public void setIndustry(String industry) {
+    this.industry = industry;
+  }
 
-    public String getIndustry() {
-        return industry;
-    }
-
-    public void setIndustry(String industry) {
-        this.industry = industry;
-    }
-
-    @Override
-    public String toString() {
-        return "Movie{" +
-                "name='" + name + '\'' +
-                ", releaseYear=" + releaseYear +
-                ", industry='" + industry + '\'' +
-                '}';
-    }
+  @Override
+  public String toString() {
+    return (
+      "Movie{" +
+      "name='" +
+      name +
+      '\'' +
+      ", releaseYear=" +
+      releaseYear +
+      ", industry='" +
+      industry +
+      '\'' +
+      '}'
+    );
+  }
 }

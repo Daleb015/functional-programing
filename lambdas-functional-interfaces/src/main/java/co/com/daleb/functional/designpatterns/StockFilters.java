@@ -6,42 +6,36 @@ import java.util.function.Predicate;
 
 public class StockFilters {
 
-    // no functional
-    public static List<Stock> bySymbol(List<Stock> list, String symbol){
-     List<Stock> filterData = new ArrayList<>();
+  // no functional
+  public static List<Stock> bySymbol(List<Stock> list, String symbol) {
+    List<Stock> filterData = new ArrayList<>();
 
-        for (Stock stock : list) {
-            if (stock.getSymbol().equals(symbol))
-                filterData.add(stock);
-        }
-     
-     return filterData;
+    for (Stock stock : list) {
+      if (stock.getSymbol().equals(symbol)) filterData.add(stock);
     }
 
-    // no functional
-    public static List<Stock> byPrice(List<Stock> list, double price){
-        List<Stock> filteredData = new ArrayList<>();
+    return filterData;
+  }
 
-        for (Stock stock : list) {
-            if (stock.getPrice()>price)
-                filteredData.add(stock);
-        }
+  // no functional
+  public static List<Stock> byPrice(List<Stock> list, double price) {
+    List<Stock> filteredData = new ArrayList<>();
 
-        return filteredData;
+    for (Stock stock : list) {
+      if (stock.getPrice() > price) filteredData.add(stock);
     }
 
-    // Now this is the functional behaviour, and we can set so many strategy with just this method.
-    public static List<Stock> filter(List<Stock> list, Predicate<Stock> p){
+    return filteredData;
+  }
 
-        List<Stock> filteredData = new ArrayList<>();
+  // Now this is the functional behaviour, and we can set so many strategy with just this method.
+  public static List<Stock> filter(List<Stock> list, Predicate<Stock> p) {
+    List<Stock> filteredData = new ArrayList<>();
 
-        for (Stock stock : list) {
-            if (p.test(stock))
-                filteredData.add(stock);
-        }
-
-        return filteredData;
-
+    for (Stock stock : list) {
+      if (p.test(stock)) filteredData.add(stock);
     }
 
+    return filteredData;
+  }
 }

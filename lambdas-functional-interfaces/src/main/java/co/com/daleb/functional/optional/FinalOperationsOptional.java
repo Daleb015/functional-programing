@@ -3,45 +3,38 @@ package co.com.daleb.functional.optional;
 import java.util.Optional;
 
 public class FinalOperationsOptional {
-    public static void main(String[] args) {
-        // if present, if a value is present consumes
 
-        Optional<String> optional = Optional.of("Value");
+  public static void main(String[] args) {
+    // if present, if a value is present consumes
 
-        optional.ifPresent(val -> System.out.println(val));
+    Optional<String> optional = Optional.of("Value");
 
-        // ifPresentOrElse, execute another action if the present is absent
+    optional.ifPresent(val -> System.out.println(val));
 
-        optional
-                .ifPresentOrElse(System.out :: println, () -> System.out.println("The value is absent"));
+    // ifPresentOrElse, execute another action if the present is absent
 
-        // Stream, let to converto a optional to a stream of a single optional
+    optional.ifPresentOrElse(System.out::println, () -> System.out.println("The value is absent"));
 
-        optional
-                .stream()
-                .forEach(System.out::println);
-        Optional.empty()
-                .stream()
-                .forEach(System.out::println);
+    // Stream, let to converto a optional to a stream of a single optional
 
-        // or, lets you to return another optional if the value is absent
+    optional.stream().forEach(System.out::println);
+    Optional.empty().stream().forEach(System.out::println);
 
-        optional.or(() -> Optional.of("New value"))
-                .ifPresent(System.out::println);
-        //Optional.empty().or(() -> Optional.of("New value")).ifPresent(System.out::println);
+    // or, lets you to return another optional if the value is absent
 
-        // equals, checks if the value of an optional is equals to other optional value, withut unwrap
-        //either both are empty
-        //or if the values in optional are equals to each other via equals method
+    optional.or(() -> Optional.of("New value")).ifPresent(System.out::println);
+    //Optional.empty().or(() -> Optional.of("New value")).ifPresent(System.out::println);
 
-        boolean value = optional.equals(Optional.of("Value"));
+    // equals, checks if the value of an optional is equals to other optional value, withut unwrap
+    //either both are empty
+    //or if the values in optional are equals to each other via equals method
 
-        System.out.println("Both are equals "+value);
+    boolean value = optional.equals(Optional.of("Value"));
 
-        //hashcode
+    System.out.println("Both are equals " + value);
 
-        System.out.println(optional.hashCode());
+    //hashcode
 
-
-    }
+    System.out.println(optional.hashCode());
+  }
 }

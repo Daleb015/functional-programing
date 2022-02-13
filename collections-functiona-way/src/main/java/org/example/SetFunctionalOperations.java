@@ -5,53 +5,43 @@ import java.util.TreeSet;
 import java.util.stream.Collectors;
 
 public class SetFunctionalOperations {
-    public static void main(String[] args) {
 
-        Set<Integer> set = Set.of(3,56,7,82,39);
+  public static void main(String[] args) {
+    Set<Integer> set = Set.of(3, 56, 7, 82, 39);
 
-        // traversal
+    // traversal
 
-        set.forEach(System.out::println);
+    set.forEach(System.out::println);
 
-        System.out.println("--------------------");
+    System.out.println("--------------------");
 
-        // filter
+    // filter
 
-        set.stream()
-                .filter(e -> e%2==0)
-                .forEach(System.out::println);
+    set.stream().filter(e -> e % 2 == 0).forEach(System.out::println);
 
-        System.out.println("--------------------");
+    System.out.println("--------------------");
 
-        // Sorting
+    // Sorting
 
-        set.stream()
-                .sorted()
-                .forEach(System.out::println);
+    set.stream().sorted().forEach(System.out::println);
 
-        TreeSet<Integer> sortedset = set.stream()
-                .collect(Collectors.toCollection(TreeSet::new));
+    TreeSet<Integer> sortedset = set.stream().collect(Collectors.toCollection(TreeSet::new));
 
-        sortedset.forEach(System.out::println);
+    sortedset.forEach(System.out::println);
 
-        System.out.println("--------------------");
+    System.out.println("--------------------");
 
-        // Map
+    // Map
 
-        Set<Double> hashset = set.stream()
-                .map(e -> Double.valueOf(e))
-                .collect(Collectors.toSet());
+    Set<Double> hashset = set.stream().map(e -> Double.valueOf(e)).collect(Collectors.toSet());
 
-        hashset.forEach(System.out::println);
-        System.out.println("--------------------");
+    hashset.forEach(System.out::println);
+    System.out.println("--------------------");
 
-        // reduce
+    // reduce
 
-        int sum = set.stream()
-                .mapToInt(e -> e)
-                .sum();
+    int sum = set.stream().mapToInt(e -> e).sum();
 
-        System.out.println(sum);
-
-    }
+    System.out.println(sum);
+  }
 }

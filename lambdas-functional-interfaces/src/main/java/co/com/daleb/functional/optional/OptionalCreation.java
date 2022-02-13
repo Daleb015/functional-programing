@@ -1,24 +1,23 @@
 package co.com.daleb.functional.optional;
 
-import javax.swing.text.html.Option;
 import java.util.Optional;
+import javax.swing.text.html.Option;
 
 public class OptionalCreation {
-    public static void main(String[] args) {
-        String val = "a string";
-        Optional<String> optional = Optional.of(val);
 
-        // Empty optional
-        Optional<Integer> empty = Optional.empty();
+  public static void main(String[] args) {
+    String val = "a string";
+    Optional<String> optional = Optional.of(val);
 
-        // nullable if not sure there is a value
+    // Empty optional
+    Optional<Integer> empty = Optional.empty();
 
-        Optional<String> nullable = Optional.ofNullable(val);
+    // nullable if not sure there is a value
 
-        Optional<String> emptyOptional = Optional.ofNullable(null);
+    Optional<String> nullable = Optional.ofNullable(val);
 
-        // Optional are inmutable, use  bytes for the wrap.
+    Optional<String> emptyOptional = Optional.ofNullable(null);
+    // Optional are inmutable, use  bytes for the wrap.
 
-
-    }
+  }
 }

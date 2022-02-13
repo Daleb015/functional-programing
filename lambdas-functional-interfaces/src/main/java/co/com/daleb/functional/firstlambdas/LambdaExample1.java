@@ -24,8 +24,9 @@ package co.com.daleb.functional.firstlambdas;
 
 /*Lambdas in interfaces can only used when the interface has only one abstract method*/
 public class LambdaExample1 {
-    public static void main(String[] args) {
-        Thread t = new Thread( () -> System.out.println("Thread executed by anonymous class") );
-           t.start();
-    }
+
+  public static void main(String[] args) {
+    Thread t = new Thread(() -> System.out.println("Thread executed by anonymous class"));
+    t.start();
+  }
 }

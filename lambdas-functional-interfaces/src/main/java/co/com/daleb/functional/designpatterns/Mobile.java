@@ -1,54 +1,64 @@
 package co.com.daleb.functional.designpatterns;
 
 public class Mobile {
-    final int ram, storage;
-    final int battery;
-    final int camera;
-    final String processor;
-    final double screenSize;
 
-    public Mobile(MobileBuilder builder) {
-        this.ram = builder.ram;
-        this.storage = builder.storage;
-        this.battery = builder.battery;
-        this.camera = builder.camera;
-        this.processor = builder.processor;
-        this.screenSize = builder.screenSize;
-    }
+  final int ram, storage;
+  final int battery;
+  final int camera;
+  final String processor;
+  final double screenSize;
 
-    public int getRam() {
-        return ram;
-    }
+  public Mobile(MobileBuilder builder) {
+    this.ram = builder.ram;
+    this.storage = builder.storage;
+    this.battery = builder.battery;
+    this.camera = builder.camera;
+    this.processor = builder.processor;
+    this.screenSize = builder.screenSize;
+  }
 
-    public int getStorage() {
-        return storage;
-    }
+  public int getRam() {
+    return ram;
+  }
 
-    public int getBattery() {
-        return battery;
-    }
+  public int getStorage() {
+    return storage;
+  }
 
-    public int getCamera() {
-        return camera;
-    }
+  public int getBattery() {
+    return battery;
+  }
 
-    public String getProcessor() {
-        return processor;
-    }
+  public int getCamera() {
+    return camera;
+  }
 
-    public double getScreenSize() {
-        return screenSize;
-    }
+  public String getProcessor() {
+    return processor;
+  }
 
-    @Override
-    public String toString() {
-        return "Mobile{" +
-                "ram=" + ram +
-                ", storage=" + storage +
-                ", battery=" + battery +
-                ", camera=" + camera +
-                ", processor='" + processor + '\'' +
-                ", screenSize=" + screenSize +
-                '}';
-    }
+  public double getScreenSize() {
+    return screenSize;
+  }
+
+  @Override
+  public String toString() {
+    return (
+      "Mobile{" +
+      "ram=" +
+      ram +
+      ", storage=" +
+      storage +
+      ", battery=" +
+      battery +
+      ", camera=" +
+      camera +
+      ", processor='" +
+      processor +
+      '\'' +
+      ", screenSize=" +
+      screenSize +
+      '}'
+    );
+  }
 }

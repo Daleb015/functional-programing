@@ -4,33 +4,29 @@ package com.co.daleb.generics.basics;
  * Hello world!
  *
  */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        Data<String> d1 = new Data<>("This is d1");
+public class App {
 
-        System.out.println( d1.toString() );
+  public static void main(String[] args) {
+    Data<String> d1 = new Data<>("This is d1");
 
-        Data<Integer> d2 = new Data<>(10);
+    System.out.println(d1.toString());
 
-        int data = (int)d2.getData();
+    Data<Integer> d2 = new Data<>(10);
 
-        System.out.println(data);
+    int data = (int) d2.getData();
 
-        IData<Long> d3 = new Data<>(15L);
+    System.out.println(data);
 
-        System.out.println(d3.toString());
+    IData<Long> d3 = new Data<>(15L);
 
-        /*generic Type: generic class or generic interface*/
+    System.out.println(d3.toString());
 
-        // Subclassing
+    /*generic Type: generic class or generic interface*/
 
-        Data<String> d4 = new Data<>("Data 4");
+    // Subclassing
 
-        BaseData<String> b1 = d4;
+    Data<String> d4 = new Data<>("Data 4");
 
-
-
-    }
+    BaseData<String> b1 = d4;
+  }
 }

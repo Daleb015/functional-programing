@@ -1,46 +1,47 @@
 package org.example;
 
 public class Entry {
-    Object key;
-    Object value;
-    Entry next;
 
-    public Entry(Object key, Object value) {
-        this.key = key;
-        this.value = value;
-        this.next=null;
-    }
+  Object key;
+  Object value;
+  Entry next;
 
-    public Entry() {
-        this.next=null;
-    }
+  public Entry(Object key, Object value) {
+    this.key = key;
+    this.value = value;
+    this.next = null;
+  }
 
-    public Object getKey() {
-        return key;
-    }
+  public Entry() {
+    this.next = null;
+  }
 
-    public void setKey(Object key) {
-        this.key = key;
-    }
+  public Object getKey() {
+    return key;
+  }
 
-    public Object getValue() {
-        return value;
-    }
+  public void setKey(Object key) {
+    this.key = key;
+  }
 
-    public void setValue(Object value) {
-        this.value = value;
-    }
+  public Object getValue() {
+    return value;
+  }
 
-    public Entry getNext() {
-        return next;
-    }
+  public void setValue(Object value) {
+    this.value = value;
+  }
 
-    public void setNext(Entry next) {
-        this.next = next;
-    }
+  public Entry getNext() {
+    return next;
+  }
 
-    @Override
-    public String toString() {
-        return "key:"+key+" value:"+value+" next= "+next;
-    }
+  public void setNext(Entry next) {
+    this.next = next;
+  }
+
+  @Override
+  public String toString() {
+    return "key:" + key + " value:" + value + " next= " + next;
+  }
 }

@@ -6,45 +6,40 @@ import java.util.OptionalInt;
 import java.util.stream.IntStream;
 
 public class Calculations {
-    public static void main(String[] args) {
-        // IntStream
-        // DoubleStream
-        // LongStream
 
-        // Sum
+  public static void main(String[] args) {
+    // IntStream
+    // DoubleStream
+    // LongStream
 
-        int sum = IntStream.of(1, 2, 3)
-                .sum();
+    // Sum
 
-        System.out.println(sum);
+    int sum = IntStream.of(1, 2, 3).sum();
 
-        // Max Optional : primitive
+    System.out.println(sum);
 
-        OptionalInt maxOptiuonal = IntStream.of(1,2,3)
-                .max();
+    // Max Optional : primitive
 
-        System.out.println(maxOptiuonal.orElseGet(()->0));
+    OptionalInt maxOptiuonal = IntStream.of(1, 2, 3).max();
 
+    System.out.println(maxOptiuonal.orElseGet(() -> 0));
 
-        // Min Optional : primitive
+    // Min Optional : primitive
 
-        OptionalInt minOptional = IntStream.of(1,2,3)
-                .min();
+    OptionalInt minOptional = IntStream.of(1, 2, 3).min();
 
-        System.out.println(minOptional.getAsInt());
+    System.out.println(minOptional.getAsInt());
 
-        // Average() Optional Primitive
+    // Average() Optional Primitive
 
-        OptionalDouble average = IntStream.of(1, 2, 3, 4).average();
+    OptionalDouble average = IntStream.of(1, 2, 3, 4).average();
 
-        System.out.println(average.getAsDouble());
+    System.out.println(average.getAsDouble());
 
-        // SumaryStatistics()
+    // SumaryStatistics()
 
-        IntSummaryStatistics intSummaryStatistics = IntStream.of(1, 2, 3, 4)
-                .summaryStatistics();
+    IntSummaryStatistics intSummaryStatistics = IntStream.of(1, 2, 3, 4).summaryStatistics();
 
-        System.out.println(intSummaryStatistics);
-
-    }
+    System.out.println(intSummaryStatistics);
+  }
 }

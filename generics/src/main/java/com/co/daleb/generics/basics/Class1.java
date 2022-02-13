@@ -1,9 +1,7 @@
 package com.co.daleb.generics.basics;
 
-interface Iinterface{};
+interface Iinterface {}
 
-class Class2{};
+class Class2 {}
 
-public class Class1<T> extends Class2 implements Iinterface {
-
-}
+public class Class1<T> extends Class2 implements Iinterface {}

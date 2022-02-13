@@ -1,8 +1,9 @@
 package co.com.daleb.functional.functionalinterfaces;
 
 public class LambdaUnderTheHood {
-    public static void main(String[] args) {
-/*                MyFunctionalInterface myFunctionalInterface = new MyFunctionalInterface() {
+
+  public static void main(String[] args) {
+    /*                MyFunctionalInterface myFunctionalInterface = new MyFunctionalInterface() {
                     @Override
                     public void myMethod() {
                         System.out.println("Implementacion 1");
@@ -16,9 +17,8 @@ public class LambdaUnderTheHood {
                     }
                 };*/
 
-        MyFunctionalInterface myFunctionalInterface = () -> System.out.println("Implementacion 3");
+    MyFunctionalInterface myFunctionalInterface = () -> System.out.println("Implementacion 3");
 
-        myFunctionalInterface.myMethod();
-
-    }
+    myFunctionalInterface.myMethod();
+  }
 }

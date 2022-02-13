@@ -11,30 +11,28 @@ import java.util.stream.Stream;
 
 public class FlatMapOperation {
 
-    public static void main(String[] args) {
+  public static void main(String[] args) {
+    Stream<String> a = Stream.of("Hello ", "There! ");
+    Stream<String> b = Stream.of("Learning ", "Java? ");
 
-        Stream<String> a = Stream.of("Hello ", "There! ");
-        Stream<String> b = Stream.of("Learning ", "Java? ");
+    // Stream of strings
+    Stream<Stream<String>> c = Stream.of(a, b);
 
-        // Stream of strings
-        Stream<Stream<String>> c = Stream.of(a, b);
+    Stream<String> flatMap = Stream.of(a, b).flatMap(e -> e);
 
-        Stream<String> flatMap = Stream.of(a, b)
-                .flatMap(e -> e);
+    // example
 
-        // example
+    Path p = Paths.get(
+      "C:\\Users\\daleb\\Programacion\\Workspaces\\intellij\\functional-programing\\streams\\src\\main\\java\\co\\com\\daleb\\streams\\intro\\Cuento.txt"
+    );
+    try (final Stream<String> notebook = Files.lines(p);) {
+      List<String> collect = notebook
+        .flatMap(line -> Arrays.stream(line.split(" ")))
+        .collect(Collectors.toList());
 
-        Path p = Paths.get("C:\\Users\\daleb\\Programacion\\Workspaces\\intellij\\functional-programing\\streams\\src\\main\\java\\co\\com\\daleb\\streams\\intro\\Cuento.txt");
-        try(final Stream<String> notebook = Files.lines(p);) {
-            List<String> collect = notebook.
-                    flatMap(line -> Arrays.stream(line.split(" ")))
-                    .collect(Collectors.toList());
-
-            collect.forEach(System.out::println);
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
+      collect.forEach(System.out::println);
+    } catch (IOException e) {
+      e.printStackTrace();
     }
+  }
 }

@@ -9,8 +9,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Bin<D, W> {
 
-    private D drytrash;
-    private W wetTrash;
-
-
+  private D drytrash;
+  private W wetTrash;
 }

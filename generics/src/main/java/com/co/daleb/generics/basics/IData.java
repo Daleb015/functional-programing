@@ -1,11 +1,9 @@
 package com.co.daleb.generics.basics;
 
-interface IBase<T>{};
+interface IBase<T> {}
 
 public interface IData<T> extends IBase<T> {
+  public T getData();
 
-    public T getData();
-
-    public void setData(T data);
-
+  public void setData(T data);
 }

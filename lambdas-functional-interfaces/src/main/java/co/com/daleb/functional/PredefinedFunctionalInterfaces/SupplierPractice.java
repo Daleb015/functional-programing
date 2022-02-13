@@ -4,14 +4,13 @@ import java.util.function.Supplier;
 
 public class SupplierPractice {
 
-    public static void main(String[] args) {
+  public static void main(String[] args) {
+    Supplier<String> stringSupplier = () -> new String("A String");
 
-        Supplier<String> stringSupplier = () -> new String("A String");
+    System.out.println(stringSupplier.get());
 
-        System.out.println(stringSupplier.get());
+    Supplier<Double> randonNumber = () -> Math.random();
 
-        Supplier<Double> randonNumber = () -> Math.random();
-
-        System.out.println(randonNumber.get());
-    }
+    System.out.println(randonNumber.get());
+  }
 }
